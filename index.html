@@ -26,13 +26,13 @@
                 <ul class="nav-bar"><div class="bg"></div>
                     <li><a class="nav-link active" href="#home">Home</a></li>
                     <li><a class="nav-link" href="#download">Download</a></li>
-                    <li><a class="nav-link" onclick="discord('Support server is offline still want to continue?')">Support</a>
+                    <li><a class="nav-link" onclick="discord('Support server is offline still want to continue?', 'https://discord.gg/BFDJSjOss')">Support</a>
                         <script>
-                            function discord(warn)
+                            function discord(warn, link)
                             {
                                 var userPreference;
-                                if (confirm("Support server is offline still want to continue?") == true){
-                                    alert('https://discord.gg/BFDJSjOss')
+                                if (confirm(warn) == true){
+                                    alert(link)
                                 }
                             }
                         </script>
